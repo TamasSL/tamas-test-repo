@@ -8,4 +8,9 @@ setup(
     author="Tamas",
     license="",
     python_requires="~=3.7",
+    extras_require={
+        "release": [
+            "twine",
+        ],
+    },
 )
