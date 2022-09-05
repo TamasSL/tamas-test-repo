@@ -10,5 +10,5 @@ jobs:
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
-      - run: python3 -m pip install --upgrade build && python3 -m build
+      - run: python3 -m pip install --upgrade build &&  pip install -r requirements.txt && python3 -m build
       - run: python -m twine upload --repository testpypi --username tamasSL --password myTestPassword999 dist/*
